@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlCommentAnalyzer", "XmlCommentAnalyzer\XmlCommentAnalyzer\XmlCommentAnalyzer.csproj", "{B7E06666-EBF8-404C-8AF8-1C89A645C81A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7675420C-545B-4C32-9705-B5FD9CF7C8C8}"
+	ProjectSection(SolutionItems) = preProject
+		publish-nuget.ps1 = publish-nuget.ps1
+		publish-nuget-local.ps1 = publish-nuget-local.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
