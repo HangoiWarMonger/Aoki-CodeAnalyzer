@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace XmlCommentAnalyzer;
+namespace Aoki.CodeAnalyzer;
 
 /// <summary>
 /// Анализатор отсутствия XML комментарев.
@@ -14,13 +14,13 @@ public class XmlDocumentationAnalyzer : DiagnosticAnalyzer
     /// Описание правила диагностики.
     /// </summary>
     private static readonly DiagnosticDescriptor Rule = new(
-        "XD0001",
-        Resources.XD0001Title,
-        Resources.XD0001_MessageFormat,
+        "AO0001",
+        Resources.AO0001Title,
+        Resources.AO0001_MessageFormat,
         "Documentation",
         DiagnosticSeverity.Warning,
         isEnabledByDefault: true,
-        description: Resources.XD0001_Description);
+        description: Resources.AO0001_Description);
 
     /// <inheritdoc />
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [Rule];
@@ -41,15 +41,20 @@ public class XmlDocumentationAnalyzer : DiagnosticAnalyzer
     {
         var symbol = context.Symbol;
 
-        // Пропускаем приватные символы (если тебе это нужно)
+        // Пропускаем приватные символы
         if (symbol.DeclaredAccessibility is not (Accessibility.Public or Accessibility.Protected))
+            return;
+
+        // Пропускаем аксессоры (get, set, init)
+        if (symbol is IMethodSymbol {MethodKind: MethodKind.PropertyGet or MethodKind.PropertySet})
             return;
 
         // Пропускаем, если есть XML-документация
         if (!string.IsNullOrWhiteSpace(symbol.GetDocumentationCommentXml()))
             return;
+
         // Генерируем диагностику
-        var diagnostic = Diagnostic.Create(Rule, symbol.Locations[0], symbol.Kind.ToString(), symbol.Name);
+        var diagnostic = Diagnostic.Create(Rule, symbol.Locations[0]);
         context.ReportDiagnostic(diagnostic);
     }
 }

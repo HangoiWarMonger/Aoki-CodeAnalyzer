@@ -18,13 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="XD0001Title" xml:space="preserve">
+    <data name="AO0001Title" xml:space="preserve">
         <value>Missing XML documentation</value><comment>The title of the code fix.</comment>
     </data>
-    <data name="XD0001_MessageFormat" xml:space="preserve">
-        <value>Public or protected member '{0}' is missing XML documentation</value><comment>The title of the diagnostic.</comment>
+    <data name="AO0001_MessageFormat" xml:space="preserve">
+        <value>Public or protected member is missing XML documentation</value><comment>The title of the diagnostic.</comment>
     </data>
-    <data name="XD0001_Description" xml:space="preserve">
+    <data name="AO0001_Description" xml:space="preserve">
         <value>All public and protected members must have XML documentation comments.</value>
     </data>
 </root>

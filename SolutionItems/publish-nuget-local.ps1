@@ -1,10 +1,10 @@
 ﻿# ================= НАСТРОЙКИ =================
-$Version = "1.0.0"
+$Version = "1.0.5"
 $VersionAlpha = "$Version-alpha"
 $Configuration = "Release"
-$ProjectPath = "./XmlCommentAnalyzer/XmlCommentAnalyzer/XmlCommentAnalyzer.csproj"
-$PackageId = "XmlCommentAnalyzer"  # <-- Добавь это
-$LocalNugetSource = "CHANGE-ME"   # <-- укажи путь к локальному источнику
+$ProjectPath = "../src/Analyzers/Aoki.CodeAnalyzer/Aoki.CodeAnalyzer.csproj"
+$PackageId = "Aoki.CodeAnalyzer"
+$LocalNugetSource = "C:\test\NuGetLocal\asd"   # <-- укажи путь к локальному источнику
 # ============================================
 
 # Создаем папку локального источника, если нет

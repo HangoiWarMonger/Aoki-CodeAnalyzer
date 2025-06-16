@@ -1,13 +1,17 @@
 ﻿using System.Data;
 using System.Data.Common;
 
-namespace XmlCommentAnalyzer.Samples;
+namespace Aoki.CodeAnalyzer.Samples;
 
-public class Class1
+public class CommentsSample
 {
     private readonly DataAdapter _technologyEvaluator;
 
-    public Class1(DataAdapter technologyEvaluator)
+    public string A { get; set; }
+
+    public string B { get; init; }
+
+    public CommentsSample(DataAdapter technologyEvaluator)
     {
         _technologyEvaluator = technologyEvaluator;
     }

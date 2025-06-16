@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace XmlCommentAnalyzer.Benchmarks;
+namespace Aoki.CodeAnalyzer.Benchmarks;
 
 [MemoryDiagnoser]
 [SimpleJob]
@@ -32,7 +32,7 @@ public class XmlDocumentationAnalyzerBenchmark
         );
     }
 
-    // [Benchmark(Baseline = true)]
+    [Benchmark(Baseline = true)]
     public async Task<List<Diagnostic>> EmptyAnalyzer_LargeCodebase()
     {
         var compilationWithAnalyzers = _largeCompilation.WithAnalyzers(

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XmlCommentAnalyzer {
+namespace Aoki.CodeAnalyzer {
     using System;
     
     
@@ -38,7 +38,7 @@ namespace XmlCommentAnalyzer {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("XmlCommentAnalyzer.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Aoki.CodeAnalyzer.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,27 +62,27 @@ namespace XmlCommentAnalyzer {
         /// <summary>
         ///   Looks up a localized string similar to All public and protected members must have XML documentation comments..
         /// </summary>
-        internal static string XD0001_Description {
+        internal static string AO0001_Description {
             get {
-                return ResourceManager.GetString("XD0001_Description", resourceCulture);
+                return ResourceManager.GetString("AO0001_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Public or protected member &apos;{0}&apos; is missing XML documentation.
+        ///   Looks up a localized string similar to Public or protected member is missing XML documentation.
         /// </summary>
-        internal static string XD0001_MessageFormat {
+        internal static string AO0001_MessageFormat {
             get {
-                return ResourceManager.GetString("XD0001_MessageFormat", resourceCulture);
+                return ResourceManager.GetString("AO0001_MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Missing XML documentation.
         /// </summary>
-        internal static string XD0001Title {
+        internal static string AO0001Title {
             get {
-                return ResourceManager.GetString("XD0001Title", resourceCulture);
+                return ResourceManager.GetString("AO0001Title", resourceCulture);
             }
         }
     }

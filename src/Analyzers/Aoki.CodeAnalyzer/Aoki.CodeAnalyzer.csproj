@@ -8,20 +8,17 @@
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <IsRoslynAnalyzer>true</IsRoslynAnalyzer>
 
-        <RootNamespace>XmlCommentAnalyzer</RootNamespace>
-        <AssemblyName>XmlCommentAnalyzer</AssemblyName>
-
         <!-- Метаданные пакета -->
-        <PackageId>XmlCommentAnalyzer</PackageId>
+        <PackageId>Aoki.CodeAnalyzer</PackageId>
         <Version>1.0.0</Version>
         <Authors>alex.lukianov</Authors>
         <Company>dex</Company>
-        <Description>Анализатор комментариев XML для C#</Description>
+        <Description>Анализатор кода C#</Description>
         <PackageTags>roslyn analyzer;xml comments;code quality</PackageTags>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/HangoiWarMonger/xml-analyzer</RepositoryUrl>
+        <RepositoryUrl>https://github.com/HangoiWarMonger/Aoki-CodeAnalyzer</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageProjectUrl>https://github.com/HangoiWarMonger/xml-analyzer</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/HangoiWarMonger/Aoki-CodeAnalyzer</PackageProjectUrl>
 
         <!-- Публикация -->
         <IncludeSymbols>true</IncludeSymbols>
@@ -29,6 +26,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <IncludeBuildOutput>false</IncludeBuildOutput>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>

@@ -1,9 +1,9 @@
 ﻿# ================= НАСТРОЙКИ =================
-$Version = "1.0.0"
+$Version = "1.0.1"
 $ApiKey = "CHANGE-ME"
 $Configuration = "Release"
-$ProjectPath = "./XmlCommentAnalyzer/XmlCommentAnalyzer/XmlCommentAnalyzer.csproj"
-$PackageId = "XmlCommentAnalyzer"
+$ProjectPath = "../src/Analyzers/Aoki.CodeAnalyzer/Aoki.CodeAnalyzer.csproj"
+$PackageId = "Aoki.CodeAnalyzer"
 # ============================================
 
 if (-not $ApiKey -or $ApiKey -eq "ТВОЙ_NUGET_API_KEY") {

@@ -1,5 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
-using XmlCommentAnalyzer.Benchmarks;
+using Aoki.CodeAnalyzer.Benchmarks;
 
 Console.WriteLine("XML Documentation Analyzer Benchmark");
 Console.WriteLine("=====================================");

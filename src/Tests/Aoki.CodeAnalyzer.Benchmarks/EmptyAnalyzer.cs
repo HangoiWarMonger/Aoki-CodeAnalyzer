@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace XmlCommentAnalyzer.Benchmarks;
+namespace Aoki.CodeAnalyzer.Benchmarks;
 
 /// <summary>
 /// Пустой анализатор для бенчмарков.
