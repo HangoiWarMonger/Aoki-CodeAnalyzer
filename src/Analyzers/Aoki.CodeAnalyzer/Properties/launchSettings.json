@@ -3,7 +3,7 @@
   "profiles": {
     "DebugRoslynAnalyzers": {
       "commandName": "DebugRoslynComponent",
-      "targetProject": "../XmlCommentAnalyzer.Samples/XmlCommentAnalyzer.Samples.csproj"
+      "targetProject": "../../Tests/Aoki.CodeAnalyzer.Samples/Aoki.CodeAnalyzer.Samples.csproj"
     }
   }
 }

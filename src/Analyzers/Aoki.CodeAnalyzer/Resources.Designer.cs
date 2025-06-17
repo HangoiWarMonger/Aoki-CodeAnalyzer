@@ -60,20 +60,47 @@ namespace Aoki.CodeAnalyzer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to dsa.
+        /// </summary>
+        internal static string AO0000Description {
+            get {
+                return ResourceManager.GetString("AO0000Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To enable XML documentation analysis, set &lt;GenerateDocumentationFile&gt;true&lt;/GenerateDocumentationFile&gt; in the project file.
+        /// </summary>
+        internal static string AO0000MessageFormat {
+            get {
+                return ResourceManager.GetString("AO0000MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GenerateDocumentationFile is not enabled.
+        /// </summary>
+        internal static string AO0000Title {
+            get {
+                return ResourceManager.GetString("AO0000Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All public and protected members must have XML documentation comments..
         /// </summary>
-        internal static string AO0001_Description {
+        internal static string AO0001Description {
             get {
-                return ResourceManager.GetString("AO0001_Description", resourceCulture);
+                return ResourceManager.GetString("AO0001Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Public or protected member is missing XML documentation.
         /// </summary>
-        internal static string AO0001_MessageFormat {
+        internal static string AO0001MessageFormat {
             get {
-                return ResourceManager.GetString("AO0001_MessageFormat", resourceCulture);
+                return ResourceManager.GetString("AO0001MessageFormat", resourceCulture);
             }
         }
         

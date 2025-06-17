@@ -11,19 +11,19 @@ namespace Aoki.CodeAnalyzer;
 public class XmlDocumentationAnalyzer : DiagnosticAnalyzer
 {
     /// <summary>
-    /// Описание правила диагностики.
+    /// Описание правила диагностики для XML комантариев.
     /// </summary>
-    private static readonly DiagnosticDescriptor Rule = new(
+    private static readonly DiagnosticDescriptor NoXmlRule = new(
         "AO0001",
         Resources.AO0001Title,
-        Resources.AO0001_MessageFormat,
+        Resources.AO0001MessageFormat,
         "Documentation",
         DiagnosticSeverity.Warning,
         isEnabledByDefault: true,
-        description: Resources.AO0001_Description);
+        description: Resources.AO0001Description);
 
     /// <inheritdoc />
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [Rule];
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(NoXmlRule);
 
     /// <inheritdoc />
     public override void Initialize(AnalysisContext context)
@@ -54,7 +54,7 @@ public class XmlDocumentationAnalyzer : DiagnosticAnalyzer
             return;
 
         // Генерируем диагностику
-        var diagnostic = Diagnostic.Create(Rule, symbol.Locations[0]);
+        var diagnostic = Diagnostic.Create(NoXmlRule, symbol.Locations[0]);
         context.ReportDiagnostic(diagnostic);
     }
 }

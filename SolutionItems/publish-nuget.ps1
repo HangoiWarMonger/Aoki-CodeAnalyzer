@@ -6,7 +6,7 @@ $ProjectPath = "../src/Analyzers/Aoki.CodeAnalyzer/Aoki.CodeAnalyzer.csproj"
 $PackageId = "Aoki.CodeAnalyzer"
 # ============================================
 
-if (-not $ApiKey -or $ApiKey -eq "ТВОЙ_NUGET_API_KEY") {
+if (-not $ApiKey -or $ApiKey -eq "CHANGE-ME") {
     Write-Error "❌ Укажи свой NuGet API ключ в переменной `$ApiKey` в скрипте"
     exit 1
 }

@@ -1,5 +1,5 @@
 ﻿# ================= НАСТРОЙКИ =================
-$Version = "1.0.5"
+$Version = "1.0.7"
 $VersionAlpha = "$Version-alpha"
 $Configuration = "Release"
 $ProjectPath = "../src/Analyzers/Aoki.CodeAnalyzer/Aoki.CodeAnalyzer.csproj"
