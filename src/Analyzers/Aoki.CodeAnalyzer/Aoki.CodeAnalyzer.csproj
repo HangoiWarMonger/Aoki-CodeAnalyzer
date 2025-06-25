@@ -10,7 +10,7 @@
 
         <!-- Метаданные пакета -->
         <PackageId>Aoki.CodeAnalyzer</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.0.3</Version>
         <Authors>alex.lukianov</Authors>
         <Company>dex</Company>
         <Description>Анализатор кода C#</Description>

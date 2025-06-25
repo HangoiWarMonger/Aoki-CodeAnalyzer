@@ -41,9 +41,22 @@ public class XmlDocumentationAnalyzer : DiagnosticAnalyzer
     {
         var symbol = context.Symbol;
 
+        // 1. Пропускаем конструкторы
+        if (symbol is IMethodSymbol { MethodKind: MethodKind.Constructor })
+            return;
+
+        if (symbol.ContainingType?.DeclaredAccessibility is Accessibility.Internal or Accessibility.Private)
+            return;
+
         // Пропускаем приватные символы
         if (symbol.DeclaredAccessibility is not (Accessibility.Public or Accessibility.Protected))
             return;
+
+        // 3. Пропускаем поля, если они находятся внутри internal или private класса/record
+        if (symbol is IFieldSymbol {ContainingType.DeclaredAccessibility: Accessibility.Internal or Accessibility.Private})
+        {
+            return;
+        }
 
         // Пропускаем аксессоры (get, set, init)
         if (symbol is IMethodSymbol {MethodKind: MethodKind.PropertyGet or MethodKind.PropertySet})
