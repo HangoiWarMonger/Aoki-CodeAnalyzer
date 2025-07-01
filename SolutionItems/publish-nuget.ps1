@@ -1,7 +1,6 @@
 ﻿# ================= НАСТРОЙКИ =================
-$Version = "1.0.1"
+$Version = "1.0.5"
 $ApiKey = "CHANGE-ME"
-$Version = "1.0.3"
 $Configuration = "Release"
 $ProjectPath = "../src/Analyzers/Aoki.CodeAnalyzer/Aoki.CodeAnalyzer.csproj"
 $PackageId = "Aoki.CodeAnalyzer"
